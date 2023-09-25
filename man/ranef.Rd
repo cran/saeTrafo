@@ -5,7 +5,7 @@
 \alias{random.effects}
 \alias{ranef.NER}
 \alias{random.effects.NER}
-\title{Extract random effects of 'saeTrafo' object}
+\title{Extract random effects of saeTrafo object}
 \usage{
 \method{ranef}{NER}(object, ...)
 
@@ -21,7 +21,7 @@ A vector containing the estimated random effects at domain level is
 returned.
 }
 \description{
-Method \code{ranef.NER} extracts the random effects from an 'saeTrafo' object.
+Method \code{ranef.NER} extracts the random effects from an saeTrafo object.
 }
 \details{
 The alias \code{random.effects} can also be used instead of

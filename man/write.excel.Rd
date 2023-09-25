@@ -3,7 +3,7 @@
 \name{write.excel}
 \alias{write.excel}
 \alias{write.ods}
-\title{Exports an 'saeTrafo' Object to an Excel file or OpenDocument Spreadsheet}
+\title{Exports an saeTrafo Object to an Excel file or OpenDocument Spreadsheet}
 \usage{
 write.excel(
   object,
@@ -22,17 +22,17 @@ write.ods(
 )
 }
 \arguments{
-\item{object}{an object of type 'saeTrafo', representing point and MSE
+\item{object}{an object of type "saeTrafo", representing point and MSE
 estimates.}
 
 \item{file}{path and filename of the spreadsheet to create. It should end on
 .xlsx or .ods respectively.}
 
-\item{MSE}{logical. If \code{TRUE}, the MSE of the \code{saeTrafoObject} is
+\item{MSE}{logical. If \code{TRUE}, the MSE of the saeTrafoObject is
 exported.
 Defaults to \code{FALSE}.}
 
-\item{CV}{logical. If \code{TRUE}, the CV of the \code{saeTrafoObject} is exported.
+\item{CV}{logical. If \code{TRUE}, the CV of the saeTrafoObject is exported.
 Defaults to \code{FALSE}.}
 
 \item{split}{logical. If \code{TRUE}, point estimates, MSE and CV are written
@@ -70,7 +70,7 @@ To check if a zip application is available they recommend the command
 \code{shell("zip")}.
 }
 \examples{
-# Examples for exporting 'saeTrafoObject' to an 'Excel' file or 'OpenDocument'
+# Examples for exporting saeTrafoObject to an Excel file or OpenDocument
 # Spreadsheet
 
 \dontrun{

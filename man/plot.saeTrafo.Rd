@@ -2,7 +2,7 @@
 % Please edit documentation in R/plot.saeTrafo.R
 \name{plot.saeTrafo}
 \alias{plot.saeTrafo}
-\title{Plots for an 'saeTrafo' object}
+\title{Plots for an saeTrafo object}
 \usage{
 \method{plot}{saeTrafo}(
   x,
@@ -15,7 +15,7 @@
 )
 }
 \arguments{
-\item{x}{an object of type 'NER', representing point
+\item{x}{an object of type "NER", representing point
 and, if chosen, MSE estimates obtained by the (transformed) nested error
 regression model (see also \code{\link{NER_Trafo}}).}
 

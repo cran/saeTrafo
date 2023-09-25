@@ -1,4 +1,4 @@
-# Presents point estimates of an 'saeTrafo' Object
+# Presents point estimates of an saeTrafoObject
 
 point_saeTrafo <- function(object, indicator = "all") {
 

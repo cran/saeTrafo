@@ -2,12 +2,12 @@
 % Please edit documentation in R/stats_methods.R
 \name{predict.NER}
 \alias{predict.NER}
-\title{Predictions from 'saeTrafo' objects}
+\title{Predictions from saeTrafo objects}
 \usage{
 \method{predict}{NER}(object, ...)
 }
 \arguments{
-\item{object}{an object of type 'saeTrafo'.}
+\item{object}{an object of type "saeTrafo".}
 
 \item{...}{additional arguments that are not used in this method.}
 }
@@ -17,10 +17,10 @@ Data frame with domain predictors.
 \description{
 Method \code{predict.NER} extracts the direct estimates, the empirical
 best linear unbiased or empirical best predictors for all domains from an
-'saeTrafo' object.
+saeTrafo object.
 }
 \examples{
-# Examples for Predictions from 'saeTrafo' objects
+# Examples for Predictions from saeTrafo objects
 
 # Load Data
 data("eusilcA_smp")

@@ -4,7 +4,7 @@
 \alias{saeTrafoObject}
 \title{Fitted saeTrafoObject}
 \value{
-The following components are always included in an 'saeTrafo' object but not
+The following components are always included in an saeTrafo object but not
 always filled:
 \item{\code{call}}{the function call that produced the object.}
 \item{\code{fixed}}{for details, see \code{fixed} in
@@ -32,13 +32,13 @@ always filled:
       \code{NULL}.}
 }
 \description{
-An object of class 'saeTrafo' that represents point predictions of
+An object of class saeTrafo that represents point predictions of
 domain-specific means. Optionally, it also contains corresponding MSE
 estimates. Objects of these classes have methods for various generic
 functions. See Details for more information.
 }
 \details{
-Objects of class 'saeTrafo' and subclass 'NER' have the following
+Objects of class "saeTrafo" and subclass "NER_Trafo" have the following
 methods:
 \code{\link[saeTrafo]{compare_pred}}, \code{\link[saeTrafo]{estimators}},
 \code{\link[saeTrafo]{plot.saeTrafo}},

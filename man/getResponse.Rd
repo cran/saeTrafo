@@ -3,7 +3,7 @@
 \name{getResponse}
 \alias{getResponse}
 \alias{getResponse.NER}
-\title{Extract response variable from an 'saeTrafo' object}
+\title{Extract response variable from an saeTrafo object}
 \usage{
 \method{getResponse}{NER}(object, ...)
 }
@@ -16,8 +16,8 @@
 Vector containing the response variable.
 }
 \description{
-Method \code{getResponse.NER} extracts the response variable from a
-'saeTrafo' object.
+Method \code{getResponse.NER} extracts the response variable from a saeTrafo
+object.
 }
 \details{
 The generic function \code{getResponse} is imported from package

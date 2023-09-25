@@ -10,7 +10,7 @@ estimators(object, MSE, CV, ...)
 \method{estimators}{saeTrafo}(object, MSE = FALSE, CV = FALSE, ...)
 }
 \arguments{
-\item{object}{an object of type 'saeTrafo', representing point and,
+\item{object}{an object of type "saeTrafo", representing point and,
 if chosen, MSE estimates.}
 
 \item{MSE}{optional logical. If \code{TRUE}, MSE estimates are added to the
@@ -23,7 +23,7 @@ added to the data frame of point estimates. Defaults to \code{FALSE}.}
 }
 \value{
 The return of \code{estimators.saeTrafo} is an object of type
-'estimators.saeTrafo' with point and/or MSE estimates and/or calculated CV's
+"estimators.saeTrafo" with point and/or MSE estimates and/or calculated CV's
 from \code{saeTrafoObject$ind} and, if chosen, \code{saeTrafoObject$MSE}.
 These objects contain two elements, one data frame
 \code{ind} and a character naming the indicator or indicator group
@@ -40,7 +40,7 @@ object is suitable for printing with the method
 \code{print.estimators.saeTrafo}.
 }
 \details{
-Objects of class 'estimators.saeTrafo' have methods for following
+Objects of class "estimators.saeTrafo" have methods for following
 generic functions: \code{head} and \code{tail} (for default documentation,
 see \code{\link[utils]{head}}, \code{\link[utils]{tail}}),
 \code{as.matrix} (for default documentation, see \code{\link[base]{matrix}}),
@@ -51,7 +51,7 @@ see \code{\link[base]{subset}}).
 \examples{
 
 \donttest{
-# Example for presenting point, MSE, and CV estimates for a 'saeTrafo' object
+# Example for presenting point, MSE, and CV estimates for a saeTrafo object
 
 # Load Data
 data("eusilcA_smp")

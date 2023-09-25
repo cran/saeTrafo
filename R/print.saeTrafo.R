@@ -1,4 +1,4 @@
-# Prints a 'saeTrafo' object
+# Prints a saeTrafo object
 
 #' @export
 

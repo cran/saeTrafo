@@ -10,9 +10,9 @@ compare_pred(object1, object2, MSE = FALSE, ...)
 \method{compare_pred}{saeTrafo}(object1, object2, MSE = FALSE, ...)
 }
 \arguments{
-\item{object1}{an object of type 'saeTrafo'.}
+\item{object1}{an object of type "saeTrafo".}
 
-\item{object2}{an object of type 'saeTrafo' or 'emdi'
+\item{object2}{an object of type "saeTrafo" or "emdi"
 (\code{\link[emdi]{emdiObject}}).}
 
 \item{MSE}{optional logical. If \code{TRUE}, MSE estimates are returned.
@@ -23,18 +23,18 @@ Defaults to \code{FALSE} and than point estimates are returned.}
 \value{
 Data frame containing the point estimates or the MSE estimates
 (if \code{MSE} is set to \code{TRUE}) of both objects. If column names are
-duplicated, the suffixes '_1' and '_2' are added to their names. '_1' and
-'_2' standing for object1 and object2, respectively.
+duplicated, the suffixes "_1" and "_2" are added to their names. "_1" and
+"_2" standing for object1 and object2, respectively.
 }
 \description{
 Function \code{compare_pred} is a generic function used to compare
 predictions of two model objects.
 
-Method \code{compare_pred.saeTrafo} compares predictions of two 'saeTrafo'
-objects or a 'saeTrafo' object and an 'emdi' object.
+Method \code{compare_pred.saeTrafo} compares predictions of two saeTrafo
+objects or a saeTrafo object and a emdi object.
 }
 \examples{
-# Example comparing two 'saeTrafo' objects
+# Example comparing two saeTrafo objects
 
 \donttest{
 # Load Data

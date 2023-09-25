@@ -38,14 +38,21 @@ framework_NER <- function(fixed, pop_area_size, pop_mean, pop_cov, pop_data,
                           dimnames = list(names(pop_area_size),
                                           cov_names(c("intercept", mod_vars)))
     )
+
     for (i in 1:N_dom_pop) {
       pos <- pop_data[pop_domains] == names(pop_area_size)[i]
-      pop_mean.mat[i, ] <- apply(X      = model.matrix(fixed, pop_data[pos, ]),
+      pop_mean.mat[i, ] <- apply(X      = model.matrix(as.formula(
+          paste("~", deparse(fixed[[3]], width.cutoff = 500))
+        ), pop_data[which(pos), ]),
                                  MARGIN = 2,
                                  FUN    = mean
       )
-      pop_cov.mat[i, ] <- c(cov(model.matrix(fixed, pop_data[pos, ]),
-                                model.matrix(fixed, pop_data[pos, ]))
+      pop_cov.mat[i, ] <- c(cov(model.matrix(as.formula(
+          paste("~", deparse(fixed[[3]], width.cutoff = 500))),
+        pop_data[which(pos), ]),
+        model.matrix(as.formula(
+          paste("~", deparse(fixed[[3]], width.cutoff = 500))
+        ), pop_data[which(pos), ]))
       )
     }
 
@@ -96,6 +103,7 @@ framework_NER <- function(fixed, pop_area_size, pop_mean, pop_cov, pop_data,
     )
     row.names(pop_mean.mat) <- names(pop_mean)
     colnames(pop_mean.mat) <- c("intercept", mod_vars)
+    pop_mean.mat <- pop_mean.mat[order(rownames(pop_mean.mat)),]
 
     if (!is.null(pop_cov)) {
 
@@ -110,6 +118,7 @@ framework_NER <- function(fixed, pop_area_size, pop_mean, pop_cov, pop_data,
       )
       row.names(pop_cov.mat) <- names(pop_cov)
       colnames(pop_cov.mat) <- cov_names(c("intercept", mod_vars))
+      pop_cov.mat <- pop_cov.mat[order(row.names(pop_cov.mat)),]
     } else {
       pop_cov.mat <- NULL
     }
@@ -119,6 +128,9 @@ framework_NER <- function(fixed, pop_area_size, pop_mean, pop_cov, pop_data,
       factor(smp_data[[smp_domains]], levels = names(pop_area_size))
     smp_domains_vec <- smp_data[[smp_domains]]
     smp_domains_vec <- droplevels(smp_domains_vec)
+
+
+
 
     # Number of households in population
     N_pop <- sum(pop_area_size)

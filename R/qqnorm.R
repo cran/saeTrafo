@@ -1,9 +1,9 @@
-#' Quantile-quantile plots for an 'saeTrafo' object
+#' Quantile-quantile plots for an saeTrafo object
 #'
 #' Normal quantile-quantile plots of the underlying model (see
 #' \code{\link{NER_Trafo}}) are obtained. The plots are obtained by
 #' \code{\link[ggplot2]{ggplot}}.
-#' @param y a model object of type 'saeTrafo' (see \code{\link{NER_Trafo}}).
+#' @param y a model object of type "saeTrafo" (see \code{\link{NER_Trafo}}).
 #' @param color a character vector with two elements. The first element defines
 #' the color for the line in the Q-Q plots, for the Cook's Distance plot and for
 #' the Box-Cox plot. The second element defines the color for the densities.

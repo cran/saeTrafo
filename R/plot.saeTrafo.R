@@ -1,4 +1,4 @@
-#' Plots for an 'saeTrafo' object
+#' Plots for an saeTrafo object
 #'
 #' Diagnostic plots of the nested error regression model
 #' (see also \code{\link{NER_Trafo}}) are obtained. These include Q-Q plots and
@@ -10,7 +10,7 @@
 #' The range of the x-axis is optional but necessary to change if there are
 #' convergence problems. All plots are obtained by
 #' \code{\link[ggplot2]{ggplot}}.
-#' @param x an object of type 'NER', representing point
+#' @param x an object of type "NER", representing point
 #' and, if chosen, MSE estimates obtained by the (transformed) nested error
 #' regression model (see also \code{\link{NER_Trafo}}).
 #' @param label argument that enables to customize title and axis labels. There

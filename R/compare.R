@@ -3,8 +3,8 @@
 #' Function \code{compare_pred} is a generic function used to compare
 #' predictions of two model objects.
 #'
-#' @param object1 an object of type 'saeTrafo'.
-#' @param object2 an object of type 'saeTrafo' or 'emdi' (\code{\link{emdi}}).
+#' @param object1 an object of type "saeTrafo".
+#' @param object2 an object of type "saeTrafo" or "emdi" (\code{\link{emdi}}).
 #' @param MSE optional logical. If \code{TRUE}, MSE estimates are returned.
 #' Defaults to \code{FALSE} and than point estimates are returned.
 #' @param ... further arguments passed to or from other methods.
@@ -14,25 +14,25 @@
 compare_pred <- function(object1, object2, MSE = FALSE, ...)
   UseMethod("compare_pred")
 
-#' Compare predictions of 'saeTrafo' objects
+#' Compare predictions of saeTrafo objects
 #'
-#' Method \code{compare_pred.saeTrafo} compares predictions of two 'saeTrafo'
-#' objects or a 'saeTrafo' object and an 'emdi' object.
+#' Method \code{compare_pred.saeTrafo} compares predictions of two saeTrafo
+#' objects or a saeTrafo object and a emdi object.
 #'
-#' @param object1 an object of type 'saeTrafo'.
-#' @param object2 an object of type 'saeTrafo' or 'emdi'
+#' @param object1 an object of type "saeTrafo".
+#' @param object2 an object of type "saeTrafo" or "emdi"
 #' (\code{\link[emdi]{emdiObject}}).
 #' @param MSE optional logical. If \code{TRUE}, MSE estimates are returned.
 #' Defaults to \code{FALSE} and than point estimates are returned.
 #' @param ... further arguments passed to or from other methods.
 #' @return Data frame containing the point estimates or the MSE estimates
 #' (if \code{MSE} is set to \code{TRUE}) of both objects. If column names are
-#' duplicated, the suffixes '_1' and '_2' are added to their names. '_1' and
-#' '_2' standing for object1 and object2, respectively.
+#' duplicated, the suffixes "_1" and "_2" are added to their names. "_1" and
+#' "_2" standing for object1 and object2, respectively.
 #' @seealso \code{\link{emdi}}, \code{\link{NER_Trafo}},
 #' \code{\link{saeTrafoObject}}
 #' @examples
-#' # Example comparing two 'saeTrafo' objects
+#' # Example comparing two saeTrafo objects
 #'
 #' \donttest{
 #' # Load Data

@@ -3,12 +3,12 @@
 \name{getVarCov}
 \alias{getVarCov}
 \alias{getVarCov.NER}
-\title{Extract variance-covariance matrix from an 'saeTrafo' object}
+\title{Extract variance-covariance matrix from an saeTrafo object}
 \usage{
 \method{getVarCov}{NER}(obj, individuals = 1, type = "random.effects", ...)
 }
 \arguments{
-\item{obj}{an object of type 'NER'.}
+\item{obj}{an object of type "NER".}
 
 \item{individuals}{vector of levels of the in-sample domains can be specified
 for the types "\code{conditional}" or "\code{marginal}".}
@@ -31,7 +31,7 @@ in-sample domains for types "\code{conditional}" and "\code{marginal}".
 }
 \description{
 Method \code{getVarCov.NER} extracts the variance-covariance matrix from a
-fitted model of class 'NER'.
+fitted model of class "NER".
 }
 \details{
 The generic function \code{getVarCov} is imported from package

@@ -3,23 +3,23 @@
 \name{summaries.saeTrafo}
 \alias{summaries.saeTrafo}
 \alias{summary.NER}
-\title{Summarizes an 'saeTrafo' object}
+\title{Summarizes an saeTrafo object}
 \usage{
 \method{summary}{NER}(object, ...)
 }
 \arguments{
-\item{object}{an object of type 'NER', representing point and MSE estimates.}
+\item{object}{an object of type "NER", representing point and MSE estimates.}
 
 \item{...}{additional arguments that are not used in this method.}
 }
 \value{
-an object of type 'summary.NER' with information about the sample and
+an object of type "summary.NER" with information about the sample and
 population data, the usage of transformation, normality tests and information
 of the model fit.
 }
 \description{
 Additional information about the data and model in small area estimation
-methods and components of an 'saeTrafo' object are extracted. The returned
+methods and components of an saeTrafo object are extracted. The returned
 object is suitable for printing  with the \code{print} function.
 }
 \seealso{

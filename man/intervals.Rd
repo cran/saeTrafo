@@ -3,12 +3,12 @@
 \name{intervals}
 \alias{intervals}
 \alias{intervals.NER}
-\title{Confidence intervals on coefficients of an 'saeTrafo' object}
+\title{Confidence intervals on coefficients of an saeTrafo object}
 \usage{
 \method{intervals}{NER}(object, level = 0.95, parm = NULL, ...)
 }
 \arguments{
-\item{object}{an object of type 'NER'.}
+\item{object}{an object of type "NER".}
 
 \item{level}{an optional numeric value with the confidence level for the
 intervals. Defaults to 0.95.}
@@ -26,7 +26,7 @@ estimated values (est.), and upper confidence limits (upper).
 }
 \description{
 Method \code{intervals.NER} provides the approximate confidence intervals on
-the coefficients (fixed effects) of an 'saeTrafo' object.
+the coefficients (fixed effects) of an saeTrafo object.
 }
 \details{
 The generic function \code{intervals} is imported from package

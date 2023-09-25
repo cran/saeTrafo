@@ -3,17 +3,17 @@
 \name{getData}
 \alias{getData}
 \alias{getData.NER}
-\title{Extract 'saeTrafo' object data}
+\title{Extract saeTrafo object data}
 \usage{
 \method{getData}{NER}(object, ...)
 }
 \arguments{
-\item{object}{an object of type 'NER'.}
+\item{object}{an object of type "NER".}
 
 \item{...}{additional arguments that are not used in this method.}
 }
 \value{
-Data frame used to fit the model. For 'NER' the (untransformed)
+Data frame used to fit the model. For "NER" the (untransformed)
 sample data is returned.
 }
 \description{

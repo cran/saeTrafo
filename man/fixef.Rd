@@ -5,14 +5,14 @@
 \alias{fixed.effects}
 \alias{fixef.NER}
 \alias{fixed.effects.NER}
-\title{Extract fixed effects from an 'saeTrafo' object}
+\title{Extract fixed effects from an saeTrafo object}
 \usage{
 \method{fixef}{NER}(object, ...)
 
 \method{fixed.effects}{NER}(object, ...)
 }
 \arguments{
-\item{object}{an object of type 'NER'.}
+\item{object}{an object of type "NER".}
 
 \item{...}{additional arguments that are not used in this method.}
 }
@@ -20,8 +20,8 @@
 A vector containing the fixed effects is returned.
 }
 \description{
-Method \code{fixef.NER} extracts the fixed effects from an 'saeTrafo' object of
-class 'NER'.
+Method \code{fixef.NER} extracts the fixed effects from an saeTrafo object of
+class "NER".
 }
 \details{
 The alias \code{fixed.effects} can also be used instead of

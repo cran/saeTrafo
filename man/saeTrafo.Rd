@@ -3,7 +3,8 @@
 \docType{package}
 \name{saeTrafo}
 \alias{saeTrafo}
-\title{The R Package 'saeTrafo' for Estimating unit-level Small Area Models under
+\alias{saeTrafo-package}
+\title{The R Package saeTrafo for Estimating unit-level Small Area Models under
 Transformations}
 \description{
 The package \pkg{saeTrafo} supports estimating regional means based on the

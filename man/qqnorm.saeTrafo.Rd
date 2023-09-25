@@ -2,12 +2,12 @@
 % Please edit documentation in R/qqnorm.R
 \name{qqnorm.saeTrafo}
 \alias{qqnorm.saeTrafo}
-\title{Quantile-quantile plots for an 'saeTrafo' object}
+\title{Quantile-quantile plots for an saeTrafo object}
 \usage{
 \method{qqnorm}{saeTrafo}(y, color = c("blue", "lightblue3"), gg_theme = NULL, ...)
 }
 \arguments{
-\item{y}{a model object of type 'saeTrafo' (see \code{\link{NER_Trafo}}).}
+\item{y}{a model object of type "saeTrafo" (see \code{\link{NER_Trafo}}).}
 
 \item{color}{a character vector with two elements. The first element defines
 the color for the line in the Q-Q plots, for the Cook's Distance plot and for

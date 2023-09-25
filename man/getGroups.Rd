@@ -3,7 +3,7 @@
 \name{getGroups}
 \alias{getGroups}
 \alias{getGroups.NER}
-\title{Extract grouping factors from an 'saeTrafo' object}
+\title{Extract grouping factors from an saeTrafo object}
 \usage{
 \method{getGroups}{NER}(object, ...)
 }
@@ -16,7 +16,7 @@
 A vector containing the grouping factors.
 }
 \description{
-Method \code{getGroups.NER} extracts grouping factors from a 'saeTrafo' object.
+Method \code{getGroups.NER} extracts grouping factors from a saeTrafo object.
 }
 \details{
 The generic function \code{getGroups} is imported from package

@@ -3,9 +3,9 @@
 #' Function \code{compare_plot} is a generic function used to produce plots
 #' comparing point and existing MSE/CV estimates of direct and model-based
 #' estimation for the Mean.
-#' @param model a model object of type 'NER', representing point and optional
+#' @param model a model object of type "NER", representing point and optional
 #' MSE estimates.
-#' @param direct an object of type 'direct','emdi', representing point
+#' @param direct an object of type "direct","emdi", representing point
 #' and MSE estimates. For more information how to generate direct estimates
 #' please see \code{\link[emdi]{direct}}.
 #' @param MSE optional logical. If \code{TRUE}, the MSE estimates of the direct
@@ -16,8 +16,8 @@
 #' plots. Defaults to \code{FALSE}.
 #' @param label argument that enables to customize title and axis labels. There
 #' are three options to label the evaluation plots: (i) original labels
-#' ('orig'), (ii) axis labels but no title ('no_title'), (iii) neither axis
-#' labels nor title ('blank').
+#' ("orig"), (ii) axis labels but no title ("no_title"), (iii) neither axis
+#' labels nor title ("blank").
 #' @param color a vector with two elements determining color schemes in returned
 #' plots.
 #' @param shape a numeric vector with two elements determining the shape of
@@ -47,9 +47,9 @@ compare_plot <- function(model, direct, MSE = FALSE,
 #' a line plot. If the input arguments MSE and CV are set to TRUE, two extra
 #' plots are created, respectively: the MSE/CV estimates of the direct and
 #' model-based estimates are compared by boxplots and scatter plots.
-#' @param model a model object of type 'NER', representing point and optional
+#' @param model a model object of type "NER", representing point and optional
 #' MSE estimates.
-#' @param direct an object of type 'direct' from 'emdi', representing point
+#' @param direct an object of type "direct" from "emdi", representing point
 #' and MSE estimates. For more information on how to generate direct estimates,
 #' please see \code{\link[emdi]{direct}}.
 #' @param MSE optional logical. If \code{TRUE}, the MSE estimates of the direct
@@ -94,7 +94,7 @@ compare_plot <- function(model, direct, MSE = FALSE,
 #' @examples
 #'
 #' \donttest{
-#' # Examples for creating plots to compare the 'saeTrafo' object with direct
+#' # Examples for creating plots to compare the saeTrafo object with direct
 #' # estimates (produced by the package emdi)
 #'
 #' # Load Data
@@ -240,7 +240,6 @@ compare_plots <- function(object, type, MSE, CV, label, color,
     data_tmp$ID <- seq_along(object$Domain)
     data_shaped <- melt(data_tmp, id.vars = "ID")
     names(data_shaped) <- c("ID", "Method", "value")
-
 
     print((plotList[[paste("scatter", ind, sep = "_")]] <-
              ggplot(data_tmp, aes(x = Direct, y = Model_based)) +

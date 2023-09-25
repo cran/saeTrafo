@@ -33,10 +33,10 @@ compare_plot(
 )
 }
 \arguments{
-\item{model}{a model object of type 'NER', representing point and optional
+\item{model}{a model object of type "NER", representing point and optional
 MSE estimates.}
 
-\item{direct}{an object of type 'direct' from 'emdi', representing point
+\item{direct}{an object of type "direct" from "emdi", representing point
 and MSE estimates. For more information on how to generate direct estimates,
 please see \code{\link[emdi]{direct}}.}
 
@@ -109,7 +109,7 @@ only created for in-sample domains.
 \examples{
 
 \donttest{
-# Examples for creating plots to compare the 'saeTrafo' object with direct
+# Examples for creating plots to compare the saeTrafo object with direct
 # estimates (produced by the package emdi)
 
 # Load Data

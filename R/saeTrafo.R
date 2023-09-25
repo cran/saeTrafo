@@ -1,4 +1,4 @@
-#' The R Package 'saeTrafo' for Estimating unit-level Small Area Models under
+#' The R Package saeTrafo for Estimating unit-level Small Area Models under
 #' Transformations
 #'
 #' The package \pkg{saeTrafo} supports estimating regional means based on the
@@ -44,4 +44,5 @@
 #' information. Unpublished.
 #' @docType package
 #' @name saeTrafo
+#' @aliases saeTrafo-package
 NULL

@@ -1,4 +1,4 @@
-#' Exports an 'saeTrafo' Object to an Excel file or OpenDocument Spreadsheet
+#' Exports an saeTrafo Object to an Excel file or OpenDocument Spreadsheet
 #'
 #' Function \code{write.excel} enables the user to export point and MSE
 #' estimates as well as diagnostics from the \code{summary} to an Excel file.
@@ -7,14 +7,14 @@
 #' Respectively the function \code{write.ods} enables the export to OpenDocument
 #' Spreadsheets. Note that while \code{write.exel} will create a single document
 #' \code{write.ods} will create a group of files.
-#' @param object an object of type 'saeTrafo', representing point and MSE
+#' @param object an object of type "saeTrafo", representing point and MSE
 #' estimates.
 #' @param file path and filename of the spreadsheet to create. It should end on
 #' .xlsx or .ods respectively.
-#' @param MSE logical. If \code{TRUE}, the MSE of the \code{saeTrafoObject} is
+#' @param MSE logical. If \code{TRUE}, the MSE of the saeTrafoObject is
 #' exported.
 #' Defaults to \code{FALSE}.
-#' @param CV logical. If \code{TRUE}, the CV of the \code{saeTrafoObject} is exported.
+#' @param CV logical. If \code{TRUE}, the CV of the saeTrafoObject is exported.
 #' Defaults to \code{FALSE}.
 #' @param split logical. If \code{TRUE}, point estimates, MSE and CV are written
 #' to different sheets in the Excel file. In \code{write.ods} \code{TRUE} will
@@ -39,7 +39,7 @@
 #' @seealso \code{\link{saeTrafoObject}}, \code{\link{NER_Trafo}}
 #'
 #' @examples
-#' # Examples for exporting 'saeTrafoObject' to an 'Excel' file or 'OpenDocument'
+#' # Examples for exporting saeTrafoObject to an Excel file or OpenDocument
 #' # Spreadsheet
 #'
 #' \dontrun{

@@ -3,7 +3,7 @@
 \name{getGroupsFormula}
 \alias{getGroupsFormula}
 \alias{getGroupsFormula.NER}
-\title{Extract grouping formula from a 'saeTrafo' object}
+\title{Extract grouping formula from a saeTrafo object}
 \usage{
 \method{getGroupsFormula}{NER}(object, ...)
 }
@@ -17,7 +17,7 @@ A one-sided formula.
 }
 \description{
 Method \code{getGroupsFormula.NER} extracts the grouping formula from an
-'saeTrafo' object.
+saeTrafo object.
 }
 \details{
 The generic function \code{getGroupsFormula} is imported from

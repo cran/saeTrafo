@@ -1,4 +1,4 @@
-# Extract model coefficients of 'saeTrafo' objects -------------------------------
+# Extract model coefficients of saeTrafo objects -------------------------------
 
 #' @aliases coefficients
 #' @export
@@ -10,7 +10,7 @@ coef.NER <- function(object, ...) {
   coef(object$model)
 }
 
-# Confidence intervals of an 'saeTrafo' object -----------------------------------
+# Confidence intervals of an saeTrafo object -----------------------------------
 
 #' @export
 #' @method confint NER
@@ -26,7 +26,7 @@ confint.NER <- function(object, parm = NULL, level = 0.95, ...) {
   }
 }
 
-# Extracts family object of 'saeTrafo' object ------------------------------------
+# Extracts family object of saeTrafo object ------------------------------------
 
 #' @export
 #' @method family NER
@@ -37,7 +37,7 @@ family.NER <- function(object, ...) {
   gaussian(link = "identity")
 }
 
-# Extract fitted values of 'saeTrafo' objects ------------------------------------
+# Extract fitted values of saeTrafo objects ------------------------------------
 
 #' @aliases fitted.values
 #' @export
@@ -49,7 +49,7 @@ fitted.NER <- function(object, ...) {
   fitted(object$model, ...)
 }
 
-# Extract the model formula of an 'saeTrafo' object ------------------------------
+# Extract the model formula of an saeTrafo object ------------------------------
 
 #' @export
 #' @method formula NER
@@ -59,7 +59,7 @@ formula.NER <- function(x, ...) {
   x$fixed
 }
 
-# Extract log-Likelihood of 'saeTrafo' objects -----------------------------------
+# Extract log-Likelihood of saeTrafo objects -----------------------------------
 #' @export
 #' @method logLik NER
 
@@ -69,7 +69,7 @@ logLik.NER <- function(object, ...) {
   invisible(object$model$logLik)
 }
 
-# Extract the number of `observations´ from a fit of an 'saeTrafo' object -------
+# Extract the number of `observations´ from a fit of an saeTrafo object -------
 #' @export
 #' @method nobs NER
 #' @importFrom stats nobs
@@ -80,18 +80,18 @@ nobs.NER <- function(object, ...) {
 }
 
 #-------------------------------------------------------------------------------
-#' Predictions from 'saeTrafo' objects
+#' Predictions from saeTrafo objects
 #'
 #' Method \code{predict.NER} extracts the direct estimates, the empirical
 #' best linear unbiased or empirical best predictors for all domains from an
-#' 'saeTrafo' object.
+#' saeTrafo object.
 #'
-#' @param object an object of type 'saeTrafo'.
+#' @param object an object of type "saeTrafo".
 #' @param ... additional arguments that are not used in this method.
 #' @return Data frame with domain predictors.
 #'
 #' @examples
-#' # Examples for Predictions from 'saeTrafo' objects
+#' # Examples for Predictions from saeTrafo objects
 #'
 #' # Load Data
 #' data("eusilcA_smp")
@@ -119,7 +119,7 @@ predict.NER <- function(object, ...) {
   object$ind
 }
 
-# Extract residuals of 'saeTrafo' objects ----------------------------------------
+# Extract residuals of saeTrafo objects ----------------------------------------
 
 #' @aliases resid
 #' @export
@@ -131,7 +131,7 @@ residuals.NER <- function(object, ...) {
   residuals(object$model, ...)
 }
 
-# Extract residual standard deviation of 'saeTrafo' objects ----------------------
+# Extract residual standard deviation of saeTrafo objects ----------------------
 
 #' @export
 #' @method  sigma NER
@@ -142,7 +142,7 @@ sigma.NER <- function(object, ...) {
   object$model$sigma
 }
 
-# Constructs a terms object from an 'saeTrafo' object ----------------------------
+# Constructs a terms object from an saeTrafo object ----------------------------
 
 #' @export
 #' @method terms NER
@@ -154,7 +154,7 @@ terms.NER <- function(x, ...) {
 }
 
 # Extract variance-covariance matrix of the main parameters --------------------
-# of 'saeTrafo' objects
+# of saeTrafo objects
 
 #' @export
 #' @method vcov NER

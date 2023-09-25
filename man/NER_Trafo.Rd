@@ -108,10 +108,10 @@ the usage of random number generation, see Details. If seed is set to
 \code{NULL}, seed is chosen randomly. Defaults to \code{123}.}
 }
 \value{
-An object of class 'NER', 'saeTrafo' that provides estimators for
+An object of class "NER", "saeTrafo" that provides estimators for
 regional means optionally corresponding MSE estimates. Several generic
 functions have methods for the returned object. For a full list and
-descriptions of the components of objects of class 'saeTrafo', see
+descriptions of the components of objects of class "saeTrafo", see
 \code{\link{saeTrafoObject}}.
 }
 \description{
@@ -186,8 +186,7 @@ NER_model_2 <- NER_Trafo(fixed = formula,
 
 # Example 3: Log-shift transformation and population data
 # A bias-corrections which need unit-level population data are applied
-\donttest{
-NER_model_3 <- NER_Trafo(fixed = formula,
+\donttest{NER_model_3 <- NER_Trafo(fixed = formula,
                          smp_domains = "district", smp_data = eusilcA_smp,
                          pop_data = eusilcA_pop, pop_domains = "district")
 }
@@ -220,10 +219,11 @@ indicators. The Canadian Journal of Statistics, Vol. 38, No.3,
 369-385. \cr \cr
 Prasad, N.N., Rao, J.N.K. (1990). The estimation of the mean squared error of
 small-area estimators. Journal of the American statistical association,
-Vol.85, No. 409, 163-171. \cr \cr
-Wuerz, N., Schmid, T., Tzavidis, N. (2022). Estimating regional income
+Vol. 85, No. 409, 163-171. \cr \cr
+Wuerz, N., Schmid, T., and Tzavidis, N. (2022) Estimating regional income
 indicators under transformations and access to limited population auxiliary
-information. Unpublished.
+information. Journal of the Royal Statistical Society: Series A
+(Statistics in Society), Vol. 185, No. 4, 1679-1706.
 }
 \seealso{
 \code{\link{saeTrafoObject}}, \code{\link[nlme]{lme}},

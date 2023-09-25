@@ -1,4 +1,4 @@
-# Point estimation function for 'saeTrafo' objects ------------------------------
+# Point estimation function for saeTrafo objects ------------------------------
 
 # This function implements the transformation of data, estimation of the nested
 # error linear regression model and calculates different estimators.
@@ -115,6 +115,7 @@ point_estim <- function(framework,
       (est_par$sigmau2est + est_par$sigmae2est / n_smp_long)
     bc_d <- (est_par$sigmau2est * (1 - gamma_est_d) + est_par$sigmae2est) / 2
 
+
     if (is.null(framework$pop_data)) {
 
       if (!is.null(framework$pop_cov)) {
@@ -126,12 +127,12 @@ point_estim <- function(framework,
         )
 
         if (transformation == "log") {
-          ind$Mean <- 1 / framework$pop_area_size *
-            (synthetic * exp(rand_eff_long + bc_d)) - shift_par
+          ind$Mean <- c(1 / framework$pop_area_size *
+            (synthetic * exp(rand_eff_long + bc_d)) - shift_par)
         }
         if (transformation == "log.shift") {
-          ind$Mean <- 1 / framework$pop_area_size *
-            (synthetic * exp(rand_eff_long + bc_d)) - optimal_lambda
+          ind$Mean <- c(1 / framework$pop_area_size *
+            (synthetic * exp(rand_eff_long + bc_d)) - optimal_lambda)
         }
       } else {
         est_dr <- (framework$pop_mean.mat %*% est_par$betas)[, 1] +
@@ -144,14 +145,14 @@ point_estim <- function(framework,
           obs_dom = framework$dist_obs_dom
         )
 
-        ind$Mean <- 1 / framework$n_pop *
+        ind$Mean <- c(1 / framework$n_pop *
           (n_smp_long * est_ds + (framework$n_pop - n_smp_long) *
               back_transformation(y              = est_dr,
                                   transformation = transformation,
                                   shift          = shift_par,
                                   lambda         = optimal_lambda
               )
-           )
+           ))
       }
 
     } else {
@@ -192,7 +193,7 @@ point_estim <- function(framework,
                                              lambda         = optimal_lambda
       )
 
-      ind$Mean <- 1 / framework$n_pop *
+      ind$Mean <- c(1 / framework$n_pop *
         (n_smp_long * est_ds
          +
            framework$n_pop * tapply(X     = est_pop_back,
@@ -206,7 +207,7 @@ point_estim <- function(framework,
                                           FUN   = mean)),
               obs_dom = framework$dist_obs_dom
             )
-        )
+        ))
     }
   }
 

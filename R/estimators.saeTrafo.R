@@ -21,7 +21,7 @@ estimators <- function(object, MSE, CV, ...) UseMethod("estimators")
 #' Coefficients of variation are calculated using these estimators. The returned
 #' object is suitable for printing with the method
 #' \code{print.estimators.saeTrafo}.
-#' @param object an object of type 'saeTrafo', representing point and,
+#' @param object an object of type "saeTrafo", representing point and,
 #' if chosen, MSE estimates.
 #' @param MSE optional logical. If \code{TRUE}, MSE estimates are added to the
 #' data frame of point estimates. Defaults to \code{FALSE}.
@@ -30,12 +30,12 @@ estimators <- function(object, MSE, CV, ...) UseMethod("estimators")
 #' @param ... other parameters that can be passed to function \code{estimators}.
 #' @return
 #' The return of \code{estimators.saeTrafo} is an object of type
-#' 'estimators.saeTrafo' with point and/or MSE estimates and/or calculated CV's
+#' "estimators.saeTrafo" with point and/or MSE estimates and/or calculated CV's
 #' from \code{saeTrafoObject$ind} and, if chosen, \code{saeTrafoObject$MSE}.
 #' These objects contain two elements, one data frame
 #' \code{ind} and a character naming the indicator or indicator group
 #' \code{ind_name}.
-#' @details Objects of class 'estimators.saeTrafo' have methods for following
+#' @details Objects of class "estimators.saeTrafo" have methods for following
 #' generic functions: \code{head} and \code{tail} (for default documentation,
 #' see \code{\link[utils]{head}}, \code{\link[utils]{tail}}),
 #' \code{as.matrix} (for default documentation, see \code{\link[base]{matrix}}),
@@ -46,7 +46,7 @@ estimators <- function(object, MSE, CV, ...) UseMethod("estimators")
 #' @examples
 #'
 #' \donttest{
-#' # Example for presenting point, MSE, and CV estimates for a 'saeTrafo' object
+#' # Example for presenting point, MSE, and CV estimates for a saeTrafo object
 #'
 #' # Load Data
 #' data("eusilcA_smp")
@@ -118,7 +118,7 @@ estimators.saeTrafo <- function(object,  MSE = FALSE, CV = FALSE, ...) {
 
 # Generic functions for object of class estimators.saeTrafo --------------------
 
-# Prints 'estimators.saeTrafo' objects
+# Prints estimators.saeTrafo objects
 #' @export
 
 print.estimators.saeTrafo <- function(x, ...) {
@@ -141,21 +141,21 @@ tail.estimators.saeTrafo <- function(x, n = 6L, keepnums = TRUE,
   tail(x$ind, n = n, keepnums = keepnums, ...)
 }
 
-# Transforms 'estimators.saeTrafo' objects into a matrix object
+# Transforms estimators.saeTrafo objects into a matrix object
 #' @export
 
 as.matrix.estimators.saeTrafo <- function(x, ...) {
   as.matrix(x$ind[, -1])
 }
 
-# Transforms 'estimators.saeTrafo' objects into a data.frame object
+# Transforms estimators.saeTrafo objects into a data.frame object
 #' @export
 
 as.data.frame.estimators.saeTrafo <- function(x, ...) {
   as.data.frame(x$ind, ...)
 }
 
-# Subsets an 'estimators.saeTrafo' object
+# Subsets an estimators.saeTrafo object
 #' @export
 
 subset.estimators.saeTrafo <- function(x, ...) {
