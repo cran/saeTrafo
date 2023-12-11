@@ -1,4 +1,4 @@
-503e8ff093a82e18c82c2b339c2a8fae *DESCRIPTION
+628c5db2067e346e6e1c2ff12a825d58 *DESCRIPTION
 7115e001f1f64487ccd2045970dc1ca5 *NAMESPACE
 0e0c2eb31158a383743caafa4f3e79e2 *R/MSE.R
 b230976488a88e0f21f64acd4176e257 *R/NER_Trafo.R
@@ -12,10 +12,10 @@ eb064c2cb183b9512ac39d96dd3f1307 *R/compare_plot.R
 fb405fbe67003c5acd7c165dcf99759a *R/estimators.saeTrafo.R
 84cea5aeb270fa338dde43d28dc1f241 *R/eusilcA_pop.R
 9b465fa9771e1ed6fa5610b3f30a5bb4 *R/eusilcA_smp.R
-cc315f36a41d51cffa60cf00930d8e60 *R/framework_NER.R
+86d187954132be8dc633872b3bf9e890 *R/framework_NER.R
 c3baf89d4cb4c001bba3f807d88cd22d *R/helping_functions.R
-cd8fa25454ac805bbad9dc5339f0abf2 *R/load_shape.R
-87ef27c49b9f0478bd6c005f67025ace *R/map_plot.saeTrafo.R
+3c27cf96981fc2574a10c8307f5a7af2 *R/load_shape.R
+7613d6cb44834660aee6460432a42033 *R/map_plot.saeTrafo.R
 63e7394c97818b32428d7e412b218ade *R/mse_saeTrafo.R
 498b22f590999359f7b8b2d8e7173fa5 *R/nlme_methods.R
 d0ba900477bffff089e66e7448b54f68 *R/optimal_parameter.R
@@ -57,8 +57,8 @@ a589f0c9e7d4d7daeaab6394114594a5 *man/getGroupsFormula.Rd
 7ff8caed84a445297c186a7bba348fd6 *man/getResponse.Rd
 a54eb7f76569ad0bda135ed140f495a6 *man/getVarCov.Rd
 600b663e772c046c488d11a9dc54cc0b *man/intervals.Rd
-3569b6ffcfa3cb21f5c9c8ed9673000a *man/load_shapeaustria.Rd
-40cf5c9baef98ea87c08c0681aaa1f91 *man/map_plot.Rd
+6c60b586bc6a07706d04be0485964b14 *man/load_shapeaustria.Rd
+393f75dbe1cb8474fb72243008f7c544 *man/map_plot.Rd
 6b33a9e388281da7d2dfab84cc66c2ca *man/plot.saeTrafo.Rd
 5e82fb7b41fd67962630f37b3cf64c6a *man/pop_area_size.Rd
 ab8d08e5e7d34172fa6f1e5023e94503 *man/pop_cov.Rd
