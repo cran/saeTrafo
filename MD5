@@ -1,6 +1,6 @@
-628c5db2067e346e6e1c2ff12a825d58 *DESCRIPTION
+15745a891d4a027c4502316bff543834 *DESCRIPTION
 7115e001f1f64487ccd2045970dc1ca5 *NAMESPACE
-0e0c2eb31158a383743caafa4f3e79e2 *R/MSE.R
+812edea06b899cf03de4ee59d637fdeb *R/MSE.R
 b230976488a88e0f21f64acd4176e257 *R/NER_Trafo.R
 751994217951f678779e171059d2cc03 *R/check_NER_Trafo.R
 839e7526b430574a971a7bea85904900 *R/check_compare_arguments.R
@@ -12,8 +12,8 @@ eb064c2cb183b9512ac39d96dd3f1307 *R/compare_plot.R
 fb405fbe67003c5acd7c165dcf99759a *R/estimators.saeTrafo.R
 84cea5aeb270fa338dde43d28dc1f241 *R/eusilcA_pop.R
 9b465fa9771e1ed6fa5610b3f30a5bb4 *R/eusilcA_smp.R
-86d187954132be8dc633872b3bf9e890 *R/framework_NER.R
-c3baf89d4cb4c001bba3f807d88cd22d *R/helping_functions.R
+adf1d02f279d91c2f50d1f630dd4bad2 *R/framework_NER.R
+e6182b9cec1b630b95a3d5885d426bbe *R/helping_functions.R
 3c27cf96981fc2574a10c8307f5a7af2 *R/load_shape.R
 7613d6cb44834660aee6460432a42033 *R/map_plot.saeTrafo.R
 63e7394c97818b32428d7e412b218ade *R/mse_saeTrafo.R
