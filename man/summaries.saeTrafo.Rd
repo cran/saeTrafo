@@ -24,6 +24,6 @@ object is suitable for printing  with the \code{print} function.
 }
 \seealso{
 \code{\link{saeTrafoObject}}, \code{\link{NER_Trafo}},
-\code{\link[MuMIn]{r.squaredGLMM}}, \code{\link[moments]{skewness}},
-\code{\link[moments]{kurtosis}}, \code{\link[stats]{shapiro.test}}
+\code{\link[moments]{skewness}}, \code{\link[moments]{kurtosis}},
+\code{\link[stats]{shapiro.test}}
 }

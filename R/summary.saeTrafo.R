@@ -9,12 +9,11 @@
 #' population data, the usage of transformation, normality tests and information
 #' of the model fit.
 #' @seealso \code{\link{saeTrafoObject}}, \code{\link{NER_Trafo}},
-#' \code{\link[MuMIn]{r.squaredGLMM}}, \code{\link[moments]{skewness}},
-#' \code{\link[moments]{kurtosis}}, \code{\link[stats]{shapiro.test}}
+#' \code{\link[moments]{skewness}}, \code{\link[moments]{kurtosis}},
+#' \code{\link[stats]{shapiro.test}}
 #' @export
 #' @importFrom moments skewness kurtosis
-#' @importFrom MuMIn r.squaredGLMM
-#' @importFrom stats shapiro.test residuals
+#' @importFrom stats shapiro.test residuals var
 #' @importFrom nlme VarCorr
 #' @name summaries.saeTrafo
 
@@ -99,7 +98,7 @@ summary.NER <- function(object, ...) {
 
   tempMod <- object$model
   tempMod$call$fixed <- object$fixed
-  r_squared <- suppressWarnings(r.squaredGLMM(tempMod))
+  r_squared <- lme_rsquared(tempMod)
   if (is.matrix(r_squared)) {
     r_marginal <- r_squared[1, 1]
     r_conditional <- r_squared[1, 2]
@@ -179,4 +178,39 @@ icc <- function(model) {
   u <- as.numeric(VarCorr(model)[1, 1])
   e <- model$sigma^2
   u / (u + e)
+}
+
+lme_rsquared <- function(x) {
+
+  VarFx <- var(fitted(x, level = 0L))
+  mmRE <- model.matrix(x$modelStruct$reStruct,
+                       data = x$data[rownames(x$fitted), ,
+                                     drop = FALSE])
+  n <- nrow(mmRE)
+  sigma2 <- x$sigma^2
+  reStruct <- x$modelStruct$reStruct
+  if ((m <- length(reStruct)) > 1L) {
+    nams <- names(reStruct)
+    for (i in seq.int(m)) attr(reStruct[[i]], "Dimnames")[[2L]] <- paste(nams[[i]],
+                                                                         attr(reStruct[[i]], "Dimnames")[[2L]], sep = ".")
+  }
+  varRe <- sum(vapply(reStruct, function(z) {
+    sig <- nlme::pdMatrix(z) * sigma2
+    mm1 <- mmRE[, rownames(sig), drop = FALSE]
+    sum(matmultdiag(mm1 %*% sig, ty = mm1)) / n
+  }, FUN.VALUE = numeric(1)))
+  varTot <- sum(VarFx, varRe)
+  res <- c(VarFx, varTot)/(varTot + sigma2)
+  names(res) <- c("R2m", "R2c")
+
+  return(res)
+}
+
+matmultdiag <- function (x, y, ty = t(y))
+{
+  if (ncol(x) != ncol(ty))
+    stop("non-conformable arguments")
+  if (nrow(x) != nrow(ty))
+    stop("result is not a square matrix")
+  return(rowSums(x * ty))
 }

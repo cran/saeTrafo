@@ -1,6 +1,6 @@
-15745a891d4a027c4502316bff543834 *DESCRIPTION
-7115e001f1f64487ccd2045970dc1ca5 *NAMESPACE
-812edea06b899cf03de4ee59d637fdeb *R/MSE.R
+ffdd8211ccfcbadf1eb836db33051dfb *DESCRIPTION
+e2c040e16091924d27739b25e639a522 *NAMESPACE
+03f3dc3f9d0d1cc65121347e3f49ef27 *R/MSE.R
 b230976488a88e0f21f64acd4176e257 *R/NER_Trafo.R
 751994217951f678779e171059d2cc03 *R/check_NER_Trafo.R
 839e7526b430574a971a7bea85904900 *R/check_compare_arguments.R
@@ -27,10 +27,10 @@ d0ba900477bffff089e66e7448b54f68 *R/optimal_parameter.R
 dfd5a25ff02273dac73316b6ac815945 *R/pop_mean.R
 bfe1e7f9038e1bb591f0b997070f94b9 *R/print.saeTrafo.R
 3dd4bb9ccd00855b9fd4a949bc15d727 *R/qqnorm.R
-97863abcccfd4a9944c7b7fb807fc2de *R/saeTrafo.R
+e7176527f33ed644e65554822085a9c7 *R/saeTrafo.R
 214af01e375705d216220c61a2955f5b *R/saeTrafoObject.R
 d9672aefd9c0aa53d394fe2572455b20 *R/stats_methods.R
-204b9c4a1dc4e1db7b87f31d91a92b0c *R/summary.saeTrafo.R
+a21a3f33d9c1f6d14e45a8856c01a399 *R/summary.saeTrafo.R
 fb85178bbd849e87ef74bf66ea041eba *R/transformation_functions.R
 b10382344171c974b856ce3013b27683 *R/write.excel.saeTrafo.R
 d28c402ad0943c32d34e3a12058c76fc *R/write.ods.saeTrafo.R
@@ -66,8 +66,8 @@ edb1b52a76cd672e85eb5e7c90ad720a *man/pop_mean.Rd
 d5420d08ed2023e3c3ec52cd3bd77eb4 *man/predict.NER.Rd
 9c56e5108a972706a592000d9b60624f *man/qqnorm.saeTrafo.Rd
 1853aa674e8200728836f24dc48179d6 *man/ranef.Rd
-65a2d38dd7590a4d22218ca125a8ddcb *man/saeTrafo.Rd
+4bc0485fe375b273617616c5d8a82a83 *man/saeTrafo.Rd
 453ca98d6425e68a4f4b29b1bf7c7e34 *man/saeTrafoObject.Rd
-4d133d7ac6a5abc525dd4730f492c1b5 *man/summaries.saeTrafo.Rd
+64e518e5ca049802c9635d17df9793cd *man/summaries.saeTrafo.Rd
 7228095adcc66c3ffeac9fb2365d3d61 *man/write.excel.Rd
 765f2aeb7bd927eaa0b12ab78e4e9b18 *vignettes/vignettesaeTrafo.pdf.asis

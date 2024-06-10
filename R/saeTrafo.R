@@ -42,7 +42,7 @@
 #' Wuerz, N., Schmid, T., Tzavidis, N. (2022). Estimating regional income
 #' indicators under transformations and access to limited population auxiliary
 #' information. Unpublished.
-#' @docType package
+#' _Package
 #' @name saeTrafo
 #' @aliases saeTrafo-package
 NULL

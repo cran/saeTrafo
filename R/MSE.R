@@ -434,8 +434,10 @@ g2 <- function(sigmau2, sigmae2, n_smp, n_dom, Xmean, X, area) {
 
   g2_res <- rep(NA, m)
 
+  solve_sum_Mitte <- solve(sum_Mitte)
+
   for (i in 1:m) {
-    g2_res[i] <- t(X_vec[i, ]) %*% solve(sum_Mitte) %*% X_vec[i, ]
+    g2_res[i] <- t(X_vec[i, ]) %*% solve_sum_Mitte  %*% X_vec[i, ]
   }
   return(g2_res)
 }
@@ -448,12 +450,14 @@ g3 <- function(sigmau2, sigmae2, n_smp, X, area, pop_area) {
 
   sum_ni2_xi_xi <- matrix(0, k + 1, k + 1)
 
+  l <- 1
   for (i in 1:t) {
     if (n_smp[i] != 0) {
-      x_areawise <- X[area == pop_area[i], ]
+      x_areawise <- X[area == pop_area[l], ]
       smp_mean_xi <- apply(x_areawise, MARGIN = 2, FUN = mean)
       sum_ni2_xi_xi <- sum_ni2_xi_xi +
         n_smp[i]^2 * smp_mean_xi %*% t(smp_mean_xi)
+      l <- l + 1
     }
   }
 
